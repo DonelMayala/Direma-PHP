@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Direma</title>
+	<link rel="stylesheet" type="text/css" href="css/vendors.min.css">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- END: VENDOR CSS-->
+    <!-- BEGIN: Page Level CSS-->
+    <link rel="stylesheet" type="text/css" href="css/materialize.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/flag-icon.min.css">
+    <link rel="stylesheet" type="text/css" href="css/login.css">
+    <!-- END: Page Level CSS-->
+    <!-- BEGIN: Custom CSS-->
+    <link rel="stylesheet" type="text/css" href="css/custom.css">
+	<link rel="stylesheet" type="text/css" href="css/component-navbar.css">
+</head>
+<body class="vertical-layout page-header-light vertical-menu-collapsible vertical-menu-nav-dark 2-columns  " data-open="click" data-menu="vertical-menu-nav-dark" data-col="2-columns">
+<nav>
+    <div class="nav-wrapper">
+      <a href="user-login.html" class="brand-logo">Direma</a>
+	  </div>
+	  </nav>
+	<aside class="sidenav-main nav-expanded nav-lock nav-collapsible sidenav-light navbar-full sidenav-active-rounded">
+      <ul class="sidenav sidenav-collapsible leftside-navigation collapsible sidenav-fixed menu-shadow" id="slide-out" data-menu="menu-navigation" data-collapsible="menu-accordion">
+        <li class="bold"><a class="collapsible-header waves-effect waves-cyan " href="#"><i class="material-icons">location_city</i><span class="menu-title" data-i18n="">Immobilier</span></a>
+          <div class="collapsible-body">
+            <ul class="collapsible collapsible-sub" data-collapsible="accordion">
+					<li><a class="collapsible-body" href="index.html" data-i18n=""><span>Liste</span></a>
+                    </li>
+                    <li><a class="collapsible-body" href="new.html" data-i18n=""><span>Nouveau</span></a>
+                    </li>
+                    <li><a class="collapsible-body" href="../vertical-gradient-menu-template/index.html" data-i18n=""><span>Paiement</span></a>
+                    </li>
+                    <li><a class="collapsible-body" href="../vertical-dark-menu-template/index.html" data-i18n=""><span>Defaut Paiement</span></a>
+                    </li>
+                  </ul>
+          </div>
+        </li>
+        <li class="bold"><a class="collapsible-header waves-effect waves-cyan " href="#"><i class="material-icons">airport_shuttle</i><span class="menu-title" data-i18n="">Automobile</span></a>
+          <div class="collapsible-body">
+            <ul class="collapsible collapsible-sub" data-collapsible="accordion">
+              <li><a class="collapsible-body" href="index.html" data-i18n=""><span>Liste</span></a>
+              </li>
+              <li><a class="collapsible-body" href="new.html" data-i18n=""><span>Nouveau</span></a>
+              </li>
+              <li><a class="collapsible-body" href="eCommerce-invoice.html" data-i18n=""><span>Paiement</span></a>
+              </li>
+			  <li><a class="collapsible-body" href="eCommerce-invoice.html" data-i18n=""><span>Defaut Paiement</span></a>
+              </li>
+            </ul>
+          </div>
+        </li>
+		<li class="bold"><a class="collapsible-header waves-effect waves-cyan " href="#"><i class="material-icons">accessibility</i><span class="menu-title" data-i18n="">Proprietaire</span></a>
+          <div class="collapsible-body">
+            <ul class="collapsible collapsible-sub" data-collapsible="accordion">
+              <li><a class="collapsible-body" href="eCommerce-products-page.html" data-i18n=""><span>Liste</span></a>
+              </li>
+              <li><a class="collapsible-body" href="Proprio.html" data-i18n=""><span>Nouveau</span></a>
+              </li>
+            </ul>
+          </div>
+        </li>
+		<li class="bold"><a class="collapsible-header waves-effect waves-cyan " href="#"><i class="material-icons">local_atm</i><span class="menu-title" data-i18n="">Autres Taxes</span></a>
+          <div class="collapsible-body">
+            <ul class="collapsible collapsible-sub" data-collapsible="accordion">
+              <li><a class="collapsible-body" href="eCommerce-products-page.html" data-i18n=""><span>Liste</span></a>
+              </li>
+              <li><a class="collapsible-body" href="eCommerce-pricing.html" data-i18n=""><span>Nouveau</span></a>
+              </li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+      <div class="navigation-background"></div><a class="sidenav-trigger btn-sidenav-toggle btn-floating btn-medium waves-effect waves-light hide-on-large-only" href="#" data-target="slide-out"><i class="material-icons">menu</i></a>
+    </aside>
+	<div id="main">
+      <div class="row">
+        <div class="breadcrumbs-inline pt-3 pb-1" id="breadcrumbs-wrapper">
+	<div class="row">
+    <div class="col s12 m12 l12">
+      <div id="responsive-table" class="card card card-default scrollspy">
+        <div class="card-content">
+          <div class="row">
+            <div class="col s12">
+            </div>
+            <div class="col s12">
+              <table class="responsive-table">
+                <thead>
+                  <tr>
+                    <th data-field="id">IdCode</th>
+                    <th data-field="name">Marque</th>
+                    <th data-field="price">Type v.</th>
+                    <th data-field="total">Couleur</th>
+                    <th data-field="status">Immatriculation</th>
+					<th data-field="status">Proprietaire</th>
+					<th data-field="status">Utilisation</th>
+					<th data-field="status">Date Circ.</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Alvin</td>
+                    <td>Eclair</td>
+                    <td>$0.87</td>
+                    <td>$1.87</td>
+                    <td>Yes</td>
+					<td>Yes</td>
+					<td>Yes</td>
+					<td>Yes</td>
+                  </tr>
+                  <tr>
+                    <td>Alan</td>
+                    <td>Jellybean</td>
+                    <td>$3.76</td>
+                    <td>$10.87</td>
+                    <td>No</td>
+					<td>Yes</td>
+					<td>Yes</td>
+					<td>Yes</td>
+                  </tr>
+                  <tr>
+                    <td>Jonathan</td>
+                    <td>Lollipop</td>
+                    <td>$7.00</td>
+                    <td>$12.87</td>
+                    <td>Yes</td>
+					<td>Yes</td>
+					<td>Yes</td>
+					<td>Yes</td>
+                  </tr>
+                  <tr>
+                    <td>Shannon</td>
+                    <td>KitKat</td>
+                    <td>$9.99</td>
+                    <td>$14.87</td>
+                    <td>No</td>
+					<td>Yes</td>
+					<td>Yes</td>
+					<td>Yes</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+<script src="js/vendors.min.js" type="text/javascript"></script>
+    <!-- BEGIN VENDOR JS-->
+    <!-- BEGIN PAGE VENDOR JS-->
+    <!-- END PAGE VENDOR JS-->
+    <!-- BEGIN THEME  JS-->
+    <script src="js/plugins.js" type="text/javascript"></script>
+    <script src="js/custom-script.js" type="text/javascript"></script>
+	 <script src="js/customizer.js" type="text/javascript"></script>
+</body>
+</html>
