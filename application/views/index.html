@@ -3,6 +3,7 @@
 <head>
 	<title>Direma</title>
 	<link rel="stylesheet" type="text/css" href="css/vendors.min.css">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!-- END: VENDOR CSS-->
     <!-- BEGIN: Page Level CSS-->
     <link rel="stylesheet" type="text/css" href="css/materialize.css">
@@ -17,13 +18,53 @@
 <nav>
     <div class="nav-wrapper">
       <a href="#" class="brand-logo">Direma</a>
-      <ul id="nav-mobile" class="right hide-on-med-and-down">
-        <li><a href="#">Automobile</a></li>
-        <li><a href="#">Immobilier</a></li>
-        <li><a href="#">Proprietaire</a></li>
-		<li><a href="#">Autres Taxes</a></li>
+	  </div>
+	<aside class="sidenav-main nav-expanded nav-lock nav-collapsible sidenav-light navbar-full sidenav-active-rounded">
+      <ul class="sidenav sidenav-collapsible leftside-navigation collapsible sidenav-fixed menu-shadow" id="slide-out" data-menu="menu-navigation" data-collapsible="menu-accordion">
+        <li class="bold"><a class="collapsible-header waves-effect waves-cyan " href="#"><i class="material-icons">dvr</i><span class="menu-title" data-i18n="">Templates</span></a>
+          <div class="collapsible-body">
+            <ul class="collapsible collapsible-sub" data-collapsible="accordion">
+              <li><a class="collapsible-body collapsible-header waves-effect waves-cyan" href="#" data-i18n=""><i class="material-icons">radio_button_unchecked</i><span>Vertical</span></a>
+                <div class="collapsible-body">
+                  <ul class="collapsible" data-collapsible="accordion">
+                    <li><a class="collapsible-body" href="../vertical-modern-menu-template/index.html" data-i18n=""><i class="material-icons">radio_button_unchecked</i><span>Modern  Menu</span></a>
+                    </li>
+                    <li><a class="collapsible-body" href="index.html" data-i18n=""><i class="material-icons">radio_button_unchecked</i><span>Navbar Dark</span></a>
+                    </li>
+                    <li><a class="collapsible-body" href="../vertical-gradient-menu-template/index.html" data-i18n=""><i class="material-icons">radio_button_unchecked</i><span>Gradient Menu</span></a>
+                    </li>
+                    <li><a class="collapsible-body" href="../vertical-dark-menu-template/index.html" data-i18n=""><i class="material-icons">radio_button_unchecked</i><span>Dark Menu</span></a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li><a class="collapsible-body collapsible-header waves-effect waves-cyan" href="#" data-i18n=""><i class="material-icons">radio_button_unchecked</i><span>Horizontal</span></a>
+                <div class="collapsible-body">
+                  <ul class="collapsible" data-collapsible="accordion">
+                    <li><a class="collapsible-body" href="../horizontal-menu-template/index.html" data-i18n=""><i class="material-icons">radio_button_unchecked</i><span>Horizontal Menu</span></a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li class="bold"><a class="collapsible-header waves-effect waves-cyan " href="#"><i class="material-icons">airport_shuttle</i><span class="menu-title" data-i18n="">Automobile</span></a>
+          <div class="collapsible-body">
+            <ul class="collapsible collapsible-sub" data-collapsible="accordion">
+              <li><a class="collapsible-body" href="eCommerce-products-page.html" data-i18n=""><i class="material-icons">radio_button_unchecked</i><span>Liste</span></a>
+              </li>
+              <li><a class="collapsible-body" href="eCommerce-pricing.html" data-i18n=""><i class="material-icons">radio_button_unchecked</i><span>Nouve</span></a>
+              </li>
+              <li><a class="collapsible-body" href="eCommerce-invoice.html" data-i18n=""><i class="material-icons">radio_button_unchecked</i><span>Invoice</span></a>
+              </li>
+            </ul>
+          </div>
+        </li>
+
       </ul>
-    </div>
+      <div class="navigation-background"></div><a class="sidenav-trigger btn-sidenav-toggle btn-floating btn-medium waves-effect waves-light hide-on-large-only" href="#" data-target="slide-out"><i class="material-icons">menu</i></a>
+    </aside>
   </nav>
 <script src="js/vendors.min.js" type="text/javascript"></script>
     <!-- BEGIN VENDOR JS-->
