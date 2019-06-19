@@ -34,7 +34,7 @@
                     </li>
                     <li><a class="collapsible-body" href="../vertical-gradient-menu-template/index.html" data-i18n=""><span>Paiement</span></a>
                     </li>
-                    <li><a class="collapsible-body" href="../vertical-dark-menu-template/index.html" data-i18n=""><span>Defaut Paiement</span></a>
+                    <li><a class="collapsible-body" href="../vertical-dark-menu-template/index.html" data-i18n=""><span>Defaut Paiement</span><span class="badge badge pill purple float-right mr-10">10</span></a>
                     </li>
                   </ul>
           </div>
@@ -48,7 +48,7 @@
               </li>
               <li><a class="collapsible-body" href="eCommerce-invoice.html" data-i18n=""><span>Paiement</span></a>
               </li>
-			  <li><a class="collapsible-body" href="DefautP.html" data-i18n=""><span>Defaut Paiement</span></a>
+			  <li><a class="collapsible-body" href="DefautP.html" data-i18n=""><span>Defaut Paiement</span><span class="badge badge pill purple float-right mr-10">10</span></a>
               </li>
             </ul>
           </div>
@@ -78,53 +78,62 @@
       <div id="main">
       <div class="row">
         <div class="breadcrumbs-inline pt-3 pb-1" id="breadcrumbs-wrapper">
-          <!-- Search for small screen-->
-          
-        <div class="col s12">
-          <div class="container">
-            <div class="seaction">
-  <!-- jQuery Plugin Initialization -->
- <div class="row">
-    <div class="col s12 m6 l6">
-      <div id="basic-form" class="card card card-default scrollspy">
+	<div class="row">
+    <div class="col s12 m12 l12">
+      <div id="responsive-table" class="card card card-default scrollspy">
         <div class="card-content">
-          <center> <h4 class="card-title">Ajouter un Proprietaire</h4> </center>
-          <form class="col s12">
-            <div class="row">
-              <div class="input-field col s12">
-                <input type="text" id="fn">
-                <label for="fn">Name</label>
-              </div>
+          <div class="row">
+            <div class="col s12">
             </div>
-            <div class="row">
-              <div class="input-field col s12">
-                <input id="email" type="email">
-                <label for="email">Email</label>
-              </div>
+            <div class="col s12">
+              <table class="responsive-table">
+                <thead>
+                  <tr>
+                    <th data-field="id">Id</th>
+                    <th data-field="name">Nom taxe</th>
+                    <th data-field="price">Proprietaire|</th>
+                    <th data-field="total">Montant</th>
+                    <th data-field="status">Nombre exercices</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Alvin</td>
+                    <td>Eclair</td>
+                    <td>$0.87</td>
+                    <td>$1.87</td>
+                    <td>Yes</td>
+                  </tr>
+                  <tr>
+                    <td>Alan</td>
+                    <td>Jellybean</td>
+                    <td>$3.76</td>
+                    <td>$10.87</td>
+                    <td>No</td>
+                  </tr>
+                  <tr>
+                    <td>Jonathan</td>
+                    <td>Lollipop</td>
+                    <td>$7.00</td>
+                    <td>$12.87</td>
+                    <td>Yes</td>
+                  </tr>
+                  <tr>
+                    <td>Shannon</td>
+                    <td>KitKat</td>
+                    <td>$9.99</td>
+                    <td>$14.87</td>
+                    <td>No</td>
+                  </tr>
+                </tbody>
+              </table>
             </div>
-            <div class="row">
-              <div class="input-field col s12">
-                <input id="password" type="password">
-                <label for="password">Password</label>
-              </div>
-            </div>
-            <div class="row">
-              <div class="input-field col s12">
-                <textarea id="message" class="materialize-textarea"></textarea>
-                <label for="message">Message</label>
-              </div>
-              <div class="row">
-                <div class="input-field col s12">
-                  <button class="btn cyan waves-effect waves-light right" type="submit" name="action">Enregistrer
-                  </button>
-                </div>
-              </div>
-            </div>
-          </form>
+          </div>
         </div>
       </div>
     </div>
-    <script src="js/vendors.min.js" type="text/javascript"></script>
+  </div>
+      <script src="js/vendors.min.js" type="text/javascript"></script>
     <!-- BEGIN VENDOR JS-->
     <!-- BEGIN PAGE VENDOR JS-->
     <!-- END PAGE VENDOR JS-->

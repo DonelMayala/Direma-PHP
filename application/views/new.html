@@ -16,11 +16,13 @@
 	<link rel="stylesheet" type="text/css" href="css/component-navbar.css">
 </head>
 <body class="vertical-layout page-header-light vertical-menu-collapsible vertical-menu-nav-dark 2-columns  " data-open="click" data-menu="vertical-menu-nav-dark" data-col="2-columns">
+<div class="navbar navbar-fixed">
 <nav>
     <div class="nav-wrapper">
       <a href="user-login.html" class="brand-logo">Direma</a>
 	  </div>
 	  </nav>
+    </div>
 	<aside class="sidenav-main nav-expanded nav-lock nav-collapsible sidenav-light navbar-full sidenav-active-rounded">
       <ul class="sidenav sidenav-collapsible leftside-navigation collapsible sidenav-fixed menu-shadow" id="slide-out" data-menu="menu-navigation" data-collapsible="menu-accordion">
         <li class="bold"><a class="collapsible-header waves-effect waves-cyan " href="#"><i class="material-icons">location_city</i><span class="menu-title" data-i18n="">Immobilier</span></a>
@@ -32,7 +34,7 @@
                     </li>
                     <li><a class="collapsible-body" href="../vertical-gradient-menu-template/index.html" data-i18n=""><span>Paiement</span></a>
                     </li>
-                    <li><a class="collapsible-body" href="../vertical-dark-menu-template/index.html" data-i18n=""><span>Defaut Paiement</span><span class="badge badge pill purple float-right mr-10">10</span></a>
+                    <li><a class="collapsible-body" href="DefautP.html" data-i18n=""><span>Defaut Paiement</span><span class="badge badge pill purple float-right mr-10">10</span></a>
                     </li>
                   </ul>
           </div>
@@ -46,7 +48,7 @@
               </li>
               <li><a class="collapsible-body" href="eCommerce-invoice.html" data-i18n=""><span>Paiement</span></a>
               </li>
-			  <li><a class="collapsible-body" href="eCommerce-invoice.html" data-i18n=""><span>Defaut Paiement</span><span class="badge badge pill purple float-right mr-10">10</span></a>
+			  <li><a class="collapsible-body" href="DefautP.html" data-i18n=""><span>Defaut Paiement</span><span class="badge badge pill purple float-right mr-10">10</span></a>
               </li>
             </ul>
           </div>
@@ -86,30 +88,49 @@
     <div class="col s12 m6 l6">
       <div id="basic-form" class="card card card-default scrollspy">
         <div class="card-content">
-          <center> <h4 class="card-title">Ajouter un Immobilier</h4> </center>
+          <center> <h4 class="card-title">Ajouter un Immobilier</h4> 
           <form class="col s12">
             <div class="row">
-              <div class="input-field col s12">
+              <div class="input-field col s12 m6">
                 <input type="text" id="fn">
-                <label for="fn">Name</label>
+                <label for="fn">Marque</label>
+              </div>
+              <div class="input-field col s12 m6">
+                <input id="type" type="text">
+                <label for="Type">Type</label>
+              </div>
+            </div>
+            </div>
+            <div class="row">
+              <div class="input-field col s12 m6">
+                <input id="Immatriculation" type="text">
+                <label for="Immatriculation">Immatriculation</label>
               </div>
             </div>
             <div class="row">
-              <div class="input-field col s12">
-                <input id="email" type="email">
-                <label for="email">Email</label>
+              <div class="input-field col s12 m6">
+                <input id="Couleur" type="text">
+                <label for="Couleur">Couleur</label>
               </div>
-            </div>
-            <div class="row">
-              <div class="input-field col s12">
-                <input id="password" type="password">
-                <label for="password">Password</label>
+              <div class="row">
+              <div class="input-field col s12 m6">
+                <input id="Categorie" type="text">
+                <label for="Categorie">Categorie</label>
               </div>
-            </div>
-            <div class="row">
-              <div class="input-field col s12">
-                <textarea id="message" class="materialize-textarea"></textarea>
-                <label for="message">Message</label>
+              <div class="input-field col m6 s12">
+                <input type="date" class="datepicker" id="dob">
+                <label for="dob">Date Circ</label>
+              </div>
+              <div class="row">
+              <div class="input-field col s12 m6">
+                <input type="text" id="fn">
+                <label for="fn">idProprietaire</label>
+              </div>
+              <div class="row">
+              <div class="input-field col s12 m6">
+                <textarea id="message5" class="materialize-textarea"></textarea>
+                <label for="message">Utilisation</label>
+              </div>
               </div>
               <div class="row">
                 <div class="input-field col s12">
